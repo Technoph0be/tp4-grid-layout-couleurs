@@ -1,0 +1,32 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "yel yel pur"
+    "red gre pur"
+    "red orc orc";
+  gap: 15px;
+}
+
+div:nth-child(1) {
+  background: yellow;
+  grid-area: yel;
+}
+div:nth-child(2) {
+  background: purple;
+  grid-area: pur;
+}
+div:nth-child(3) {
+  background: green;
+  grid-area: gre;
+}
+div:nth-child(4) {
+  background: red;
+  grid-area: red;
+}
+div:nth-child(5) {
+  background: orchid;
+  grid-area: orc;
+}
